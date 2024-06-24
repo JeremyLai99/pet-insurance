@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>pet insurance</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- 自訂的css -->
    <link rel="stylesheet" href="/style.css">
 
@@ -156,24 +156,23 @@
       </div>
     </div>
 
-    <div class="row d-flex justify-content-center"> 
-      <!-- 這裡的容器設定有問題  -->
-      <div class="col-3 d-flex pentagon-container">
+    <div class="row d-flex justify-content-center" style="padding: 150px;"> 
+      <div class="col-3 d-flex pentagon-container mb-5" style="margin-right: auto;">
         <img src="/image/customer-feedback01.jpg" alt="巨石(鬥牛犬)" class="pet-image">
         <div class="d-flex align-items-center">
           <div>
             <h4 class="text-left">巨石(鬥牛犬) 1歲</h4>
-            <h6 class="text-left">雖然有其他更便宜的寵物保險選擇，但寵度是最方便的。我很怕麻煩，所以我想以最完整方便的方式照顧它。</h6>
+            <h6 class="text-left text-wrap" style="width: 12.5rem; height: 6.25rem;">雖然有其他更便宜的寵物保險選擇，但寵度是最方便的。我很怕麻煩，所以我想以最完整方便的方式照顧它。</h6>
           </div>
           </div>
       </div>
 
-      <div class="col-3 d-flex pentagon-container">
+      <div class="col-3 d-flex pentagon-container mb-5">
         <img src="/image/customer-feedback02.jpg" alt="米亞(虎斑貓)" class="pet-image">
         <div class="d-flex align-items-center">
           <div>
             <h4 class="text-left">米亞(虎斑貓)   3歲</h4>
-            <h6 class="text-left">我小時候就知道寵物保險了。當我養了米亞時，它非常有幫助。價格非常合情合理。</h6>
+            <h6 class="text-left text-wrap" style="width: 12.5rem;  height: 6.25rem;">我小時候就知道寵物保險了。當我養了米亞時，它非常有幫助。價格非常合情合理。</h6>
           </div>
         </div>
       </div>
@@ -184,7 +183,7 @@
 
   <!-- section 6 常見問題 start -->
    <div class="container">
-    <div class="row">
+    <div class="row d-flex justify-content-center">
       <div class="col-12 ">
         <img class="img-fluid" loading="lazy" src="/image/section6-top-bar.png" alt="">
       </div>
@@ -196,51 +195,101 @@
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Accordion Item #1
+              <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                什麼類型的貓狗的都可以承保寵物險嗎? 是否有不承保項目?
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                不適用本專案:<br>
+                <ul class="list-unstyled">
+                  <li>1. 寵物年齡超過限制</li>
+                  <li>2. 已患有疾病</li>
+                  <li>3. 寵物身體本身有缺陷(如:失明、四肢缺陷、出血、腹瀉、耳聾或體檢內容有異常項目等)</li>
+                  <li>4. 未植晶片</li>
+                  <li>5. 寵物從事競賽、狩獵、特技表演等</li>
+                  <li>6. 職業犬(警犬、搜救犬、導盲犬等)</li>
+                  <li>7. 法國鬥牛犬、比特犬(美國比特鬥牛犬、史大佛夏牛頭犬、斯塔福郡鬥牛梗、美國斯塔福郡梗)、日本土佐犬、紐波利頓犬、阿根廷杜告犬、巴西菲勒犬、獒犬(藏獒、馬士提夫獒犬、西藏獒犬、鬥牛獒犬、義大利獒犬、波爾多獒犬)</li>
+                  <li>8. 其他未列之項目本公司保留最終承保之權利</li>
+                </ul>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
+                如果不知道寵物的年齡怎麼辦?
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                如您的寵物有施打晶片，可向附近之寵物登記站(動物醫院)查詢，並請如實填寫。 若不清楚日期，則請填寫寵物登記證出生年之12月31日即可。
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Accordion Item #3
+                該如何查詢寵物資料?
               </button>
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <ul class="list-unstyled">
+                  <li>1. 可至寵物登記管理資訊網查詢相關資訊https://www.pet.gov.tw/</li>
+                  <li>2. 飼主可憑身分證至就近的寵物登記站(動物醫院)進行資料的查詢，即可取得寵物晶片號碼與辦理寵物登記證補發和遺失申報。</li>                  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                晶片內的資料可以更換嗎?晶片如果是家人的名字，該如何投保?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li>1. 要、被保人跟晶片飼主必須是同一人。</li>
+                  <li>2. 若不符合上述條件，需先辦理晶片號碼移轉，使得投保；或請該晶片之飼主自行投保。</li>
+                  <li>3. 晶片移轉須至寵物登記站(動物醫院)辦理，且需攜帶原飼主&新飼主身分證。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                寵物相關資料是否可以批改(如晶片號碼、品種、寵物名稱等)? 如欲申請批改應準備甚麼文件?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li>1. 僅可批改同一隻寵物的寵物名、寵物種類/品種/性別、晶片號碼、出生日期(寵物登記證上所載明之資訊)。</li>
+                  <li>2. 批改時必須提供新的寵物登記證影本。</li>
+                  <li>3. 如欲申請批改作業，請上網連結至國泰產險官網/保戶服務/保單專區/保單變更/加保，下載新種險批改申請書https://www.cathay-ins.com.tw/INSPFWeb/servlet/HttpDispatcher/PFA5_0200/prompt，簽名或蓋章並附上匯款帳號，寄送回寵度產險：台北市大安區仁愛路四段296號7樓(意外保險部新種險科)收。批改所需文件：1. 批改申請書 2. 寵物登記證影本。</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
    </div>
   <!-- section 6 end -->
 
- 
+ <!-- footer start -->
+  <footer >
+    <div class="d-flex justify-content-center" style="background-color: orange;">暫時用</div>
+  </footer>
+ <!-- footer end -->
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> -->
 </body>
 </html>
