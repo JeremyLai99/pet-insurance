@@ -1,81 +1,110 @@
 /* Custom styles */
-.overlay-content {
+
+/* 文字粗細 */
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+h4 {
+  font-weight: 900;
+}
+
+h5 {
+  font-weight: 900;
+}
+
+p {
+  font-weight: 900;
+}
+
+/* 文字顏色 */
+.text-color {
+  color: #515151;
+}
+
+/* 配色 */
+.own-blue{
+  color: #4CB1C8;
+}
+
+.own-li-green {
+  color: #CFE7B1;
+}
+
+.own-orange {
+  color: #CA5C3D;
+}
+
+.own-yellow {
+  color: #FFF5CF;
+}
+/* .overlay-content {
   position: relative;
   margin: auto 0;
   padding: 10px 25px 10px 10px;
-}
+} */
 
-.image-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 0 60px 59px;
-  height: 510px;
-  width: fit-content;
-}
 
-.responsive-img {
+/* .responsive-img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 
-.main-text {
+/* .main-text {
   font-size: 24px;
   font-weight: 400;
   color: #000;
   font-family: Inter, sans-serif;
   margin-top: 20px;
-}
+} */
 
-.highlight-text {
+/* .highlight-text {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-}
+} */
 
-.highlight-color {
-  color: rgba(76, 177, 200, 1);
-}
-
-.caption-text {
+/* .caption-text {
   font-weight: 900;
   line-height: 34px;
-}
+} */
 
-.description-text {
-  font-family: Noto Serif TC, sans-serif;
-  font-size: 20px;
+/* 按鈕1 */
+.own-btn1{
+  border-radius: 2.1875rem;
+  background-color: #A2E5F8;
   color: #515151;
-  margin-top: 29px;
-}
-
-.cta-button {
-  font-family: Noto Serif TC, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  border-radius: 35px;
-  background-color: #a2e5f8;
-  color: #4c4c4c;
-  white-space: nowrap;
+  font-size: 1.25rem;
+  font-weight: 900;
   text-align: center;
-  padding: 9px 15px;
-  margin-top: 29px;
+  white-space: nowrap;
+  width: 9.375rem;
+  height: 3.125rem;
 }
 
 .stats-container {
-  background-color: #cfe7b1;
+  background-color: #CFE7B1;
   border-radius: 20px;
-  margin-top: 37px;
-  padding: 20px;
+  padding: 1.25rem 150px;
 }
 
-.stats-text {
+.sick-icon {
+  padding: 1.25rem;
+  background-color: #FFF5CF;
+}
+
+/* .stats-text {
   text-align: center;
   font-family: Noto Serif TC, sans-serif;
   font-weight: 900;
   font-size: 20px;
   color: #000;
-}
+} */
 
 /* 顧客回饋 start */
 .pentagon-container {
