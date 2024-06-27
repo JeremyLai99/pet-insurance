@@ -1,0 +1,91 @@
+/* Custom styles */
+
+/* 文字粗細 */
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+h4 {
+  font-weight: 900;
+}
+
+h5 {
+  font-weight: 900;
+}
+
+p {
+  font-weight: 900;
+}
+
+/* 文字顏色 */
+.text-color {
+  color: #515151;
+}
+
+/* 配色 */
+.own-blue{
+  color: #4CB1C8;
+}
+
+.own-li-blue {
+  color: #94BF5C;
+}
+
+.own-green {
+  color: #CFE7B1;
+}
+
+.own-li-green {
+  color: #CFE7B1;
+}
+
+.own-orange {
+  color: #CA5C3D;
+}
+
+.own-yellow {
+  color: #FFF5CF;
+}
+
+.own-main-yellow {
+  color: #F6D554;
+}
+
+/* 背景圖片 */
+.bg-image {
+  background-image: url('/image/bg-img\ 1.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+/* 按鈕1 */
+.own-btn1{
+  border-radius: 2.1875rem;
+  background-color: #A2E5F8;
+  color: #515151;
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+  width: 9.375rem;
+  height: 3.125rem;
+  border: 0;
+}
+
+.own-btn2{
+  border-radius: 2.1875rem;
+  background-color: #F6D554;
+  color: #515151;
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+  width: 18.75rem;
+  height: 3.125rem;
+  
+}
