@@ -91,4 +91,15 @@
 }
 
 
+/* 優點介紹文字圖案間距 */
+/* 預設樣式 */
+.img-container {
+  margin-top: -7.5rem;
+}
 
+/* 當畫面寬度小於 1735px 時應用此樣式 */
+@media (max-width: 1735px) {
+  .img-container {
+      margin-top: 0;
+  }
+}

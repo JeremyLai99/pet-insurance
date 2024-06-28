@@ -7,8 +7,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- 自訂的css -->
-   <link rel="stylesheet" href="/pi-main.css">
-   <link rel="stylesheet" href="/pi-index.css">
+   <link rel="stylesheet" href="./pi-main.css">
+   <link rel="stylesheet" href="./pi-index.css">
 
 </head>
 <body>
@@ -19,7 +19,7 @@
 
   <!-- section 1 介紹 start -->
   <div class="container-fluid d-flex justify-content-center bg-image">
-    <div class="row align-items-center" style="margin: 0;">
+    <div class="row align-items-center" style="margin: 0; padding: 0 60px;">
       <div class="col-lg-5 d-flex justify-content-center" style="padding: 0 6.25rem;" >
           <img class="w-80 h-80"  loading="lazy" src="/image/dog-with-cat-v3.png" alt=""/>
       </div>
@@ -45,7 +45,7 @@
             <h5 class="text-color" style="margin: 1.875rem 0 0 0;">
               我們的團隊由保險業的專家組成，同時也是熱愛飼養多隻寵物的飼主。對我們來說，寵物一直是我們的家人。選擇我們的寵物保險服務，讓您的毛孩子擁有專屬的健康守護者，讓您與您的愛寵都能享有最貼心、最專業的保障。
             </h5>
-            <a href=""><button class="own-btn1 border-0" style="margin-top: 1.875rem;">了解更多</button></a>
+            <a href="#/"><button class="own-btn1 border-0" style="margin-top: 1.875rem;">了解更多</button></a>
         <div class="stats-container" style="margin-top: 1.875rem;">
           <div class="row">
             <div class="col-lg-6 col-sm-12">
@@ -78,7 +78,7 @@
         <h2 class="d-flex justify-content-center text-color">常見醫療花費</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="row" style="padding: 0 60px;">
       <div class="col-lg-5 d-flex align-items-center justify-content-end" style="padding-left:20px;">
         <div class="stats-container text-center" style="padding: 1.25rem 9.375rem ;">
           <h5>膿皮症</h5>
@@ -126,8 +126,8 @@
   <!-- section 2 end -->
 
   <!-- section 3 優點介紹 start -->
-   <div class="container-fluid bg-image">
-    <div class="row">
+   <div class="container-fluid bg-image lowest-layer">
+    <div class="row" style="padding: 0 60px;">
       <div class="col-12 d-flex justify-content-center">
         <ul class="list-unstyled d-inline-flex justify-content-around" style="height: 23.75rem;">
           <li class="col-2" style="padding-top: 130px">
@@ -152,8 +152,8 @@
           </li>        
         </ul>
       </div>
-      <div class="col-12 d-flex justify-content-center" style="margin-top: -7.5rem;">
-        <img class="img-fluid" loading="lazy" src="/image/dogs-no-background1.png" alt="">
+      <div class="col-12 d-flex justify-content-center img-container">
+        <img class="img-fluid lower-layer" loading="lazy" src="/image/dogs-no-background1.png" alt="">
       </div>
     </div>
    </div>
@@ -161,8 +161,8 @@
 
   <!-- section 4 保險試算 start -->
    <div class="container-fluid " style="margin-top: -8.125rem; background-color: white">
-    <div class="row mt-5">
-      <div class="col-12 mt-5">
+    <div class="row mt-5 d-flex justify-content-center">
+      <div class="col-9 mt-5">
         <h2 class="d-flex justify-content-center text-color mt-5" style="color: 515151;">保險試算</h2>
       </div>
     </div>
@@ -185,8 +185,8 @@
 
   <!-- section 5 顧客意見回饋 start -->
   <div class="container-fluid">
-    <div class="row mt-3">
-      <div class="col-12">
+    <div class="row mt-3 d-flex justify-content-center">
+      <div class="col-9">
         <h2 class="d-flex justify-content-center text-color" style="color: 515151;">顧客意見回饋</h2>
       </div>
     </div>
@@ -330,17 +330,141 @@
 
  <!-- 試算modal-cat start -->
  <div class="modal fade" id="ModalCat" tabindex="-1" aria-labelledby="ModalCatLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl">
     <div class="modal-content">
-      <div class="modal-header bg-image">
-        <h5 class="modal-title text-color" id="ModalCatLabel">您好, 貓爸貓媽</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header bg-image pb-0">
+        <div class="modal-title" id="ModalCatLabel">
+          <!-- 保留空位 -->
+        </div>
+        <div class="d-flex align-items-start justify-content-end"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
       </div>
 
       
       <div class="modal-body bg-image">
-        貓試算的內容
-        <img src="/image/cat-btn.png" alt="">
+        <div class="d-flex justify-content-center">
+          <img src="/image/cat-on-btn.png" alt="">
+        </div>
+        <div class="btn-group d-flex flex-wrap justify-content-center align-items-center"  role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="cat-breed" id="cat-breed-1" autocomplete="off" required>
+          <label class="own-btn3" for="cat-breed-1">暹羅貓</label>
+
+          <input type="radio" class="btn-check" name="cat-breed" id="cat-breed-2" autocomplete="off" required>
+          <label class="own-btn3 " for="cat-breed-2">布偶貓</label>
+        
+          <input type="radio" class="btn-check" name="cat-breed" id="cat-breed-3" autocomplete="off" required>
+          <label class="own-btn3 " for="cat-breed-3">藍貓</label>
+
+          <input type="radio" class="btn-check" name="cat-breed" id="cat-breed-4" autocomplete="off" required>
+          <label class="own-btn3 " for="cat-breed-4">美短貓</label>
+        
+          <input type="radio" class="btn-check" name="cat-breed" id="cat-breed-5" autocomplete="off" required>
+          <label class="own-btn3 " for="cat-breed-5">英短貓</label>
+
+          <input type="radio" class="btn-check" name="cat-breed" id="cat-breed-6" autocomplete="off" required>
+          <label class="own-btn3 " for="cat-breed-6">虎斑貓</label>
+        
+          <input type="radio" class="btn-check" name="cat-breed" id="cat-breed-7" autocomplete="off" required>
+          <label class="own-btn3 " for="cat-breed-7">米克斯貓</label>
+
+          <input type="radio" class="btn-check" name="cat-breed" id="cat-breed-8" autocomplete="off" required>
+          <label class="own-btn3 " for="cat-breed-8">其他品種</label>
+        </div>
+        <div class="d-flex justify-content-center">
+          <h4 class="text-color">※如果不知道品種或不在選項中,請選擇其他品種</h4>
+        </div>
+        <div class="row align-items-start mt-4">
+          <div class="col-4 ">
+            <div class="d-flex justify-content-center">
+              <h3>寵物性別</h3>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+              <div class="me-5 form-check d-flex justify-content-center">
+                <input class="form-check-input " type="radio" name="cat-gender" id="cat-gender-male" required>
+                <label class="form-check-label ms-2" for="cat-gender-male">
+                  <h2>男生</h2>
+                </label>
+              </div>
+              <div class="form-check d-flex justify-content-center">
+                <input class="form-check-input " type="radio" name="cat-gender" id="cat-gender-female" required>
+                <label class="form-check-label ms-2" for="cat-gender-female">
+                  <h2>女生</h2>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="d-flex justify-content-center">
+              <h3>寵物生日</h3>
+            </div>
+            <form class="d-flex">
+              
+              <div class="form-group d-flex align-items-center">
+                  <select class="form-control own-btn3"  style="width: 176px; height: 66px;" id="year-pet-b" required>
+                      <!-- 使用 JavaScript 來填充年份選項 -->
+                  </select>
+                  <label for="year-pet-b"><h2 class="mx-2">年</h2></label>                  
+              </div>
+  
+              <!-- 月份選擇 -->
+              <div class="form-group d-flex align-items-center">
+                <select class="form-control own-btn3" style="width: 176px; height: 66px;" id="month-pet-b" required>
+                    
+                </select>
+                <label for="month-pet-b"><h2 class="mx-2">月</h2></label>
+            </div>
+  
+              <!-- 日期選擇 -->
+              <div class="form-group  d-flex align-items-center">                  
+                  <select class="form-control own-btn3" style="width: 176px; height: 66px;" id="day-pet-b" required>
+                      <!-- 使用 JavaScript 來填充日期選項 -->
+                  </select>
+                  <label for="day-pet-b"><h2 class="mx-2">日</h2></label>
+              </div>
+            </form>
+            <div class="d-flex justify-content-center">
+              <h4 class="text-color">※請確認相關投保資料與寵物身分證明文件(寵物登記證)相符</h4>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-4 mb-2">
+            <div class="col-8 mt-2">
+              <div class="d-flex justify-content-center">
+                <h3>投保起始日期</h3>
+              </div>
+              <form class="d-flex">
+                
+                <div class="form-group d-flex align-items-center">
+                    <select class="form-control own-btn3"  style="width: 176px; height: 66px;" id="year-insurance-start" required>
+                        <!-- 使用 JavaScript 來填充年份選項 -->
+                    </select>
+                    <label for="year-insurance-start"><h2 class="mx-2">年</h2></label>                  
+                </div>
+    
+                <!-- 月份選擇 -->
+                <div class="form-group d-flex align-items-center">
+                  <select class="form-control own-btn3" style="width: 176px; height: 66px;" id="month-insurance-start" required>
+                      
+                  </select>
+                  <label for="month-insurance-start"><h2 class="mx-2">月</h2></label>
+              </div>
+    
+                <!-- 日期選擇 -->
+                <div class="form-group  d-flex align-items-center">                  
+                    <select class="form-control own-btn3" style="width: 176px; height: 66px;" id="day-insurance-start" required>
+                        <!-- 使用 JavaScript 來填充日期選項 -->
+                    </select>
+                    <label for="day-insurance-start"><h2 class="mx-2">日</h2></label>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+            
+        </div>
+        
+        
+        
         
       </div>
 
@@ -355,42 +479,139 @@
 
  <!-- 試算modal-dog start -->
  <div class="modal fade" id="ModalDog" tabindex="-1" aria-labelledby="ModalDogLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
+  <div class="modal-dialog modal-dialog-scrollable modal-xl">
     <div class="modal-content">
-      <div class="modal-header bg-image">
-        <h5 class="modal-title text-color" id="ModalDogLabel">您好, 汪爸汪媽</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header bg-image pb-0">
+        <div class="modal-title" id="ModalDogLabel">
+          <!-- 保留空位 -->
+        </div>
+        <div class="d-flex align-items-start justify-content-end"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
       </div>
 
       
       <div class="modal-body bg-image">
-        狗試算的內容
-        
-        <div class="btn-group d-flex flex-wrap justify-content-center align-items-center" style="height: 300px;" role="group" aria-label="Basic radio toggle button group">
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio1">選項 1</label>
-        
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio2">選項 2</label>
-        
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio3">選項 3</label>
-
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio4">選項 4</label>
-        
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio5">選項 5</label>
-
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio6">選項 6</label>
-        
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio7">選項 7</label>
-
-          <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
-          <label class="btn btn-outline-primary" for="btnradio8">選項 8</label>
+        <div class="d-flex justify-content-center">
+          <img src="/image/dog-on-btn.png" alt="">
         </div>
+        <div class="btn-group d-flex flex-wrap justify-content-center align-items-center"  role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="dog-breed" id="dog-breed-1" autocomplete="off" required>
+          <label class="own-btn3" for="dog-breed-1">拉布拉多犬</label>
+
+          <input type="radio" class="btn-check" name="dog-breed" id="dog-breed-2" autocomplete="off" required>
+          <label class="own-btn3 " for="dog-breed-2">德國牧羊犬</label>
+        
+          <input type="radio" class="btn-check" name="dog-breed" id="dog-breed-3" autocomplete="off" required>
+          <label class="own-btn3 " for="dog-breed-3">黃金獵犬</label>
+
+          <input type="radio" class="btn-check" name="dog-breed" id="dog-breed-4" autocomplete="off" required>
+          <label class="own-btn3 " for="dog-breed-4">臘腸狗</label>
+        
+          <input type="radio" class="btn-check" name="dog-breed" id="dog-breed-5" autocomplete="off" required>
+          <label class="own-btn3 " for="dog-breed-5">貴賓狗</label>
+
+          <input type="radio" class="btn-check" name="dog-breed" id="dog-breed-6" autocomplete="off" required>
+          <label class="own-btn3 " for="dog-breed-6">柴犬</label>
+        
+          <input type="radio" class="btn-check" name="dog-breed" id="dog-breed-7" autocomplete="off" required>
+          <label class="own-btn3 " for="dog-breed-7">吉娃娃</label>
+
+          <input type="radio" class="btn-check" name="dog-breed" id="dog-breed-8" autocomplete="off" required>
+          <label class="own-btn3 " for="dog-breed-8">其他犬種</label>
+        </div>
+        <div class="d-flex justify-content-center">
+          <h4 class="text-color">※如果不知道品種或不在選項中,請選擇其他犬種</h4>
+        </div>
+        <div class="row align-items-start mt-4">
+          <div class="col-4 ">
+            <div class="d-flex justify-content-center">
+              <h3>寵物性別</h3>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+              <div class="me-5 form-check d-flex justify-content-center">
+                <input class="form-check-input " type="radio" name="dog-gender" id="dog-gender-male" required>
+                <label class="form-check-label ms-2" for="dog-gender-male">
+                  <h2>男生</h2>
+                </label>
+              </div>
+              <div class="form-check d-flex justify-content-center">
+                <input class="form-check-input " type="radio" name="dog-gender" id="dog-gender-female" required>
+                <label class="form-check-label ms-2" for="dog-gender-female">
+                  <h2>女生</h2>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="d-flex justify-content-center">
+              <h3>寵物生日</h3>
+            </div>
+            <form class="d-flex">
+              
+              <div class="form-group d-flex align-items-center">
+                  <select class="form-control own-btn3"  style="width: 176px; height: 66px;" id="year-dog-b" required>
+                      <!-- 使用 JavaScript 來填充年份選項 -->
+                  </select>
+                  <label for="year-dog-b"><h2 class="mx-2">年</h2></label>                  
+              </div>
+  
+              <!-- 月份選擇 -->
+              <div class="form-group d-flex align-items-center">
+                <select class="form-control own-btn3" style="width: 176px; height: 66px;" id="month-pet-b" required>
+                    
+                </select>
+                <label for="month-pet-b"><h2 class="mx-2">月</h2></label>
+            </div>
+  
+              <!-- 日期選擇 -->
+              <div class="form-group  d-flex align-items-center">                  
+                  <select class="form-control own-btn3" style="width: 176px; height: 66px;" id="day-pet-b" required>
+                      <!-- 使用 JavaScript 來填充日期選項 -->
+                  </select>
+                  <label for="day-pet-b"><h2 class="mx-2">日</h2></label>
+              </div>
+            </form>
+            <div class="d-flex justify-content-center">
+              <h4 class="text-color">※請確認相關投保資料與寵物身分證明文件(寵物登記證)相符</h4>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-4 mb-2">
+            <div class="col-8 mt-2">
+              <div class="d-flex justify-content-center">
+                <h3>投保起始日期</h3>
+              </div>
+              <form class="d-flex">
+                
+                <div class="form-group d-flex align-items-center">
+                    <select class="form-control own-btn3"  style="width: 176px; height: 66px;" id="year-insurance-start" required>
+                        <!-- 使用 JavaScript 來填充年份選項 -->
+                    </select>
+                    <label for="year-insurance-start"><h2 class="mx-2">年</h2></label>                  
+                </div>
+    
+                <!-- 月份選擇 -->
+                <div class="form-group d-flex align-items-center">
+                  <select class="form-control own-btn3" style="width: 176px; height: 66px;" id="month-insurance-start" required>
+                      
+                  </select>
+                  <label for="month-insurance-start"><h2 class="mx-2">月</h2></label>
+              </div>
+    
+                <!-- 日期選擇 -->
+                <div class="form-group  d-flex align-items-center">                  
+                    <select class="form-control own-btn3" style="width: 176px; height: 66px;" id="day-insurance-start" required>
+                        <!-- 使用 JavaScript 來填充日期選項 -->
+                    </select>
+                    <label for="day-insurance-start"><h2 class="mx-2">日</h2></label>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+            
+        </div>
+        
         
         
         
@@ -405,9 +626,172 @@
 </div>
  <!-- 試算modal-dog end -->
 
-
+<!-- 引入 Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <!-- Bootstrap JS and dependencies -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- 寵物生日 -->
+<!-- 引入 JavaScript 來動態填充選項 -->
+<script>
+    // 當網頁載入時
+    document.addEventListener('DOMContentLoaded', function() {
+        // 取得年份和日期選擇的元素
+        const yearPetSelect = document.getElementById('year-pet-b');
+        const monthPetSelect = document.getElementById('month-pet-b');
+        const dayPetSelect = document.getElementById('day-pet-b');
+
+        // 填充年份選項
+        const currentYear = new Date().getFullYear();
+        for (let year = currentYear; year >= currentYear - 30; year--) {
+            const option = document.createElement('option');
+            option.value = year;
+            option.textContent = year;
+            yearPetSelect.appendChild(option);
+        }
+
+        // 更新月份選項的函數
+        function updatePetMonths() {
+            const currentMonth = new Date().getMonth() + 1; // Get current month (1-12)
+            const selectedYear = parseInt(yearPetSelect.value);
+
+            // 清空月份選項
+            monthPetSelect.innerHTML = '';
+
+            // 填充月份選項
+            for (let i = 1; i <= 12; i++) {
+                const option = document.createElement('option');
+                const monthValue = ('0' + i).slice(-2); // 補零單位數月份，例如 '01'
+                option.value = monthValue;
+                option.textContent = i;
+                
+                // 根據條件設置 disabled 屬性
+                if (selectedYear === currentYear && i > currentMonth) {
+                    option.disabled = true;
+                }
+                
+                // 將選項加入到選擇框中
+                monthPetSelect.appendChild(option);
+            }
+
+            // 更新日期選項
+            updatePetDays();
+        }
+
+        // 更新日期選項的函數
+        function updatePetDays() {
+            const selectedYear = parseInt(yearPetSelect.value);
+            const selectedMonth = parseInt(monthPetSelect.value);
+            const currentDate = new Date();
+            const currentDay = currentDate.getDate();
+
+            // 清空日期選項
+            dayPetSelect.innerHTML = '';
+
+            // 計算該月份的天數
+            const daysInMonth = new Date(selectedYear, selectedMonth, 0).getDate();
+
+            // 填充日期選項
+            for (let day = 1; day <= daysInMonth; day++) {
+                const option = document.createElement('option');
+                option.value = day;
+                option.textContent = day;
+                
+                // 判斷是否大於當前日期，如果是則禁用
+                if (selectedYear === currentYear && selectedMonth === currentMonth && day > currentDay) {
+                    option.disabled = true;
+                }
+                
+                // 將選項加入到選擇框中
+                dayPetSelect.appendChild(option);
+            }
+        }
+
+        // 當年份或月份改變時，更新日期選項
+        yearPetSelect.addEventListener('change', updatePetMonths);
+        monthPetSelect.addEventListener('change', updatePetDays);
+
+        // 初始化月份和日期選項
+        updatePetMonths();
+        updatePetDays(); // 確保初始化時也執行一次更新日期選項
+    });
+</script>
+
+
+<!-- 投保日期 -->
+<!-- 引入 JavaScript 來動態填充選項 -->
+<script>
+    // 當網頁載入時
+    document.addEventListener('DOMContentLoaded', function() {
+        // 取得年份和日期選擇的元素
+        const yearInsuranceSelect = document.getElementById('year-insurance-start');
+        const monthInsuranceSelect = document.getElementById('month-insurance-start');
+        const dayInsuranceSelect = document.getElementById('day-insurance-start');
+
+        // 填充年份選項
+        const currentYear = new Date().getFullYear();
+        for (let year = currentYear; year <= currentYear + 2; year++) {
+            const option = document.createElement('option');
+            option.value = year;
+            option.textContent = year;
+            yearInsuranceSelect.appendChild(option);
+        }
+
+        // 更新月份選項的函數
+        function updateInsuranceMonths() {
+            const currentMonth = new Date().getMonth() + 1; // Get current month (1-12)
+            const selectedYear = parseInt(yearInsuranceSelect.value);
+
+            // 清空月份選項
+            monthInsuranceSelect.innerHTML = '';
+
+            // 填充月份選項
+            for (let i = 1; i <= 12; i++) {
+                const option = document.createElement('option');
+                option.value = ('0' + i).slice(-2); // Pad single digits with zero (01-12)
+                option.textContent = i;
+                if (selectedYear === currentYear && i < currentMonth) {
+                    option.disabled = true; // Disable options for past months if current year
+                }
+                monthInsuranceSelect.appendChild(option);
+            }
+
+            // 更新日期選項
+            updateInsuranceDays();
+        }
+
+        // 更新日期選項的函數
+        function updateInsuranceDays() {
+            const selectedYear = parseInt(yearInsuranceSelect.value);
+            const selectedMonth = parseInt(monthInsuranceSelect.value);
+
+            // 清空日期選項
+            dayInsuranceSelect.innerHTML = '';
+
+            // 計算該月份的天數
+            const daysInMonth = new Date(selectedYear, selectedMonth, 0).getDate();
+
+            // 填充日期選項
+            for (let day = 1; day <= daysInMonth; day++) {
+                const option = document.createElement('option');
+                option.value = day;
+                option.textContent = day;
+                dayInsuranceSelect.appendChild(option);
+            }
+        }
+
+        // 當年份或月份改變時，更新日期選項
+        yearInsuranceSelect.addEventListener('change', updateInsuranceMonths);
+        monthInsuranceSelect.addEventListener('change', updateInsuranceDays);
+
+        // 初始化月份和日期選項
+        updateInsuranceMonths();
+    });
+</script>
+
+
 
 </body>
 </html>

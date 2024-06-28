@@ -1,24 +1,9 @@
 /* Custom styles */
 
 /* 文字粗細 */
-h1 {
+h1, h2, h3, h4, h5, p {
   font-weight: 900;
-}
-
-h2 {
-  font-weight: 900;
-}
-
-h4 {
-  font-weight: 900;
-}
-
-h5 {
-  font-weight: 900;
-}
-
-p {
-  font-weight: 900;
+  margin: 0;
 }
 
 /* 文字顏色 */
@@ -31,12 +16,8 @@ p {
   color: #4CB1C8;
 }
 
-.own-li-blue {
-  color: #94BF5C;
-}
-
 .own-green {
-  color: #CFE7B1;
+  color: #94BF5C;
 }
 
 .own-li-green {
@@ -45,6 +26,10 @@ p {
 
 .own-orange {
   color: #CA5C3D;
+}
+
+.own-li-orange {
+  color: #F69A30;
 }
 
 .own-yellow {
@@ -89,3 +74,38 @@ p {
   height: 3.125rem;
   
 }
+
+.own-btn3 {
+  border-radius: 1.25rem;
+  background-color: white;
+  border: 1px solid #F69A30;
+  color: #515151;
+  font-size: 2rem;
+  font-weight: 900;
+  white-space: nowrap;
+  width: 15.625rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  margin: 5px; 
+  cursor: pointer;
+}
+.own-btn3:hover {
+  background-color: #f0f0f0; /* 懸停效果 */
+}
+.btn-check:checked + .own-btn3 {
+  background-color: #F69A30;
+  color: white;
+  border-color: #F69A30;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* radio btn樣式 */
+.form-check-input {
+  width: 25px;
+  height: 25px;
+}
+
