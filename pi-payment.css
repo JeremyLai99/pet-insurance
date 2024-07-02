@@ -1,0 +1,11 @@
+.top-frame {
+  background-color: #94BF5C;
+  border-top-left-radius: 1.875rem ;
+  border-top-right-radius: 1.875rem ;
+  height: 5rem;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
