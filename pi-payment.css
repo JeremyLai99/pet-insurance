@@ -1,3 +1,22 @@
+/* 麵包屑橫槓 */
+.bread-bar {
+  border: 3px solid rgb(153, 153, 153); 
+  width: 100%; 
+  height: 0;
+  border-radius: 20px;
+
+}
+
+/* 付費流程外框 */
+.data-frame {
+  padding: 20px;
+  border: 3px solid #C8C8C8;
+  border-top: none;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* 付費流程欄位頭樣式 */
 .top-frame {
   background-color: #94BF5C;
   border-top-left-radius: 1.875rem ;
@@ -8,4 +27,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* 同意聲明樣式 */
+.cfm-frame {
+  color: #6A513D;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: 
+  #DBDBDB;
+  display: flex;
+  align-items: center;
+  border-radius: 35px;
+  padding: 5px 20px;
+}
+
+.cfm-frame:hover {
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: 
+  #94BF5C;
+  display: flex;
+  align-items: center;
+  border-radius: 35px;
+  padding: 5px 20px;
+}
+
+textarea {
+  width: 100%; overflow-y: auto; resize: none; box-sizing: border-box; padding: 10px;
 }

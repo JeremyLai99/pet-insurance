@@ -75,8 +75,7 @@ h1, h2, h3, h4, h5, p {
   text-align: center;
   white-space: nowrap;
   width: 18.75rem;
-  height: 3.125rem;
-  
+  height: 3.125rem;  
 }
 
 .own-btn3 {
@@ -143,11 +142,3 @@ h1, h2, h3, h4, h5, p {
   color: #6F6F6F;
 }
 
-/* 付費流程外框 */
-.data-frame {
-  padding: 20px;
-  border: 3px solid #C8C8C8;
-  border-top: none;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}

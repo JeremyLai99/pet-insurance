@@ -12,35 +12,32 @@
 
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid mb-5">
     <div class="row justify-content-center">
       <!-- 麵包屑 -->
-      <div class="col-8">        
-          <div class="d-flex flex-row justify-content-center">
-            <div class="d-flex flex-column justify-content-center align-items-center">
+      <div class="col-8" style="padding: 0 50px ;">        
+          <div class="d-flex flex-row justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center" style="width: 400px;">
               <img src="./image/bread01.png" class="img-fluid">
-              <h5>寵物基本資料</h5>
+              <h5>寵物資料</h5>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="bread-bar"></div>
+            <!-- <div class="d-flex justify-content-center align-items-center">
               <img src="./image/breadbar01.png"  class="img-fluid">
-            </div>
-            <div class="d-flex flex-column justify-content-center align-items-center">
+            </div> -->
+            <div class="d-flex flex-column justify-content-center align-items-center text-center" style="width: 400px;">
               <img src="./image/bread02-default.png"  class="img-fluid">
-              <h5>要/被保險人資料</h5>
+              <h5>保人資料</h5>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
-              <img src="./image/breadbar01.png"  class="img-fluid">
-            </div>
-            <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="bread-bar"></div>
+            <div class="d-flex flex-column justify-content-center align-items-center text-center" style="width: 400px;">
               <img src="./image/bread03-default.png"  class="img-fluid">
               <h5>線上繳費</h5>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
-              <img src="./image/breadbar01.png"  class="img-fluid">
-            </div>
-            <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="bread-bar"></div>
+            <div class="d-flex flex-column justify-content-center align-items-center text-center" style="width: 400px;">
               <img src="./image/bread04-default.png"  class="img-fluid">
-              <h5>投保完成!</h5>
+              <h5>投保完成</h5>
             </div>
           </div>
       </div>
@@ -64,7 +61,7 @@
           </div>
           
 
-          <div class="col-6 d-flex flex-column justify-content-start align-items-center pb-5" style="padding: 0 20px 20px 20px;">
+          <div class="col-6 d-flex flex-column justify-content-start align-items-center" style="padding: 0 20px 20px 20px;">
             <img src="./image/pet-upload.png" class="img-fluid rounded-circle mb-4" style="background-color: #D9D9D9; width: 60%;">
             <button class="own-btn2 border-0">上傳寵物大頭照</button>
           </div>
@@ -86,13 +83,13 @@
                   </div>
                   <div class="col-4 d-flex justify-content-start align-items-center">
                     <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input" style="margin: 0;" type="radio" name="" id="" checked>
+                      <input class="form-check-input" style="margin: 0;" type="radio" name="1" id=""  checked required>
                       <label class="form-check-label d-flex align-items-center me-5" for="">
                         <h5 style="margin: 0;">否</h5>
                       </label>
                     </div>
                     <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input" style="margin: 0;" type="radio" name="" id="">
+                      <input class="form-check-input" style="margin: 0;" type="radio" name="1" id="">
                       <label class="form-check-label d-flex align-items-center" for="">
                         <h5 style="margin: 0;">是</h5>
                       </label>
@@ -105,13 +102,13 @@
                   </div>
                   <div class="col-4 d-flex justify-content-start align-items-center">
                     <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input" style="margin: 0;" type="radio" name="" id="" checked>
+                      <input class="form-check-input" style="margin: 0;" type="radio" name="2" id=""  checked required>
                       <label class="form-check-label d-flex align-items-center me-5" for="">
                         <h5 style="margin: 0;">否</h5>
                       </label>
                     </div>
                     <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input" style="margin: 0;" type="radio" name="" id="">
+                      <input class="form-check-input" style="margin: 0;" type="radio" name="2" id="">
                       <label class="form-check-label d-flex align-items-center" for="">
                         <h5 style="margin: 0;">是</h5>
                       </label>
@@ -124,13 +121,13 @@
                   </div>
                   <div class="col-4 d-flex justify-content-start align-items-center">
                     <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input" style="margin: 0;" type="radio" name="" id="" checked>
+                      <input class="form-check-input" style="margin: 0;" type="radio" name="3" id="" checked required >
                       <label class="form-check-label d-flex align-items-center me-5" for="">
                         <h5 style="margin: 0;">否</h5>
                       </label>
                     </div>
                     <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input" style="margin: 0;" type="radio" name="" id="">
+                      <input class="form-check-input" style="margin: 0;" type="radio" name="3" id="">
                       <label class="form-check-label d-flex align-items-center" for="">
                         <h5 style="margin: 0;">是</h5>
                       </label>
@@ -144,13 +141,13 @@
                   </div>
                   <div class="col-4 d-flex justify-content-start align-items-center">
                     <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input" style="margin: 0;" type="radio" name="" id="" checked>
+                      <input class="form-check-input" style="margin: 0;" type="radio" name="4" id="" checked required >
                       <label class="form-check-label d-flex align-items-center me-5" for="">
                         <h5 style="margin: 0;">否</h5>
                       </label>
                     </div>
                     <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input" style="margin: 0;" type="radio" name="" id="">
+                      <input class="form-check-input" style="margin: 0;" type="radio" name="4" id="">
                       <label class="form-check-label d-flex align-items-center" for="">
                         <h5 style="margin: 0;">是</h5>
                       </label>
@@ -164,13 +161,13 @@
                   </div>
                   <div class="col-4 d-flex justify-content-start align-items-center">
                     <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input" style="margin: 0;" type="radio" name="" id="" checked>
+                      <input class="form-check-input" style="margin: 0;" type="radio" name="5" id=""  checked required>
                       <label class="form-check-label d-flex align-items-center me-5" for="">
                         <h5 style="margin: 0;">否</h5>
                       </label>
                     </div>
                     <div class="form-check d-flex align-items-center">
-                      <input class="form-check-input" style="margin: 0;" type="radio" name="" id="">
+                      <input class="form-check-input" style="margin: 0;" type="radio" name="5" id="">
                       <label class="form-check-label d-flex align-items-center" for="">
                         <h5 style="margin: 0;">是</h5>
                       </label>
@@ -186,11 +183,71 @@
         </div>
       </div>
       <!-- 同意聲明告知 -->
-      <div class="col-8">
-
+      <div class="col-8" style="margin-top: 30px;">
+        <h4 class="top-frame">同意聲明告知</h4>
+        <div class="data-frame">
+          <div class="col-12 justify-content-center align-items-center">
+            <form >
+              <div class="d-flex justify-content-around">
+                <div class="form-check cfm-frame">
+                  <input class="form-check-input" style="border: 3px solid #B7B7B7; margin: 0 5px 0 0;" type="checkbox" value="" id="flexCheckDefault" required>
+                  <label class="form-check-label" for="flexCheckDefault">
+                    個資法告知事項
+                  </label>
+                </div>
+                <div class="form-check cfm-frame">
+                  <input class="form-check-input" style="border: 3px solid #B7B7B7; margin: 0 5px 0 0;" type="checkbox" value="" id="flexCheckDefault" required>
+                  <label class="form-check-label" for="flexCheckDefault">
+                    寵度產險服務使用約定書
+                  </label>
+                </div>
+                <div class="form-check cfm-frame">
+                  <input class="form-check-input" style="border: 3px solid #B7B7B7; margin: 0 5px 0 0;" type="checkbox" value="" id="flexCheckDefault" required>
+                  <label class="form-check-label" for="flexCheckDefault">
+                    網路投保聲明事項
+                  </label>
+                </div>
+                <div class="form-check cfm-frame">
+                  <input class="form-check-input" style="border: 3px solid #B7B7B7; margin: 0 5px 0 0;" type="checkbox" value="" id="flexCheckDefault" required>
+                  <label class="form-check-label" for="flexCheckDefault">
+                    網路保險服務聲明事項
+                  </label>
+                </div>               
+              </div>
+              <textarea rows="10" class="mt-3" >
+                
+              </textarea>
+            </form>
+          </div>        
+        </div>
+        
+            
+            
       </div>
+      <!-- 確認同意 -->
       <div class="col-8">
+        <div class="form-check align-items-center my-3" style="margin: 0; padding: 0;">
+          <input class="form-check-input" style="border: 3px solid #B7B7B7; margin: 0; padding: 0;" type="checkbox" value="" id="flexCheckDefault4" required>
+          <label class="form-check-label ms-2" for="flexCheckDefault4">
+            <h5>我已詳閱並同意以上聲明事項 </h5>
+          </label>
+        </div>
+        <div class="form-check mb-3 d-flex align-items-start" style="margin: 0; padding: 0;">
+          <input class="form-check-input" style="border: 3px solid #B7B7B7; margin: 0; padding: 0;" type="checkbox" value="" id="flexCheckDefault5">
+          <label class="form-check-label ms-2" for="flexCheckDefault5">
+            <h5>本人同意所蒐集之聯絡資料(姓名、地址、email)作為寵度保險依金控法第43條第2項，進行共同行銷之特定目的使用。如未勾選不影響本次投保權益，可直接進行下一步</h5>
+          </label>
+        </div>        
+      </div>
 
+      <!-- 下一步 -->
+      <div class="col-8">
+        <div>
+          <div class="d-flex justify-content-center align-items-center">
+            <button class="own-btn4" href="#/">上一步</button>
+            <button class="own-btn4" href="#/">下一步</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
