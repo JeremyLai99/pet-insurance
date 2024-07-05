@@ -14,11 +14,81 @@
 <body>
 
   <!-- navbar start -->
-   <div style="height: 8.75rem;">臨時navbar</div>
+       <!-- 電腦版 nav 這裡開始 -->
+       <nav class="navbar navbar-expand-lg navbar-light d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block bg-image">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <div class="d-flex justify-content-center w-100">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./image/about-icon.png" alt="" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./image/product-icon.png" alt="" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./image/insurance-icon.png" alt="" /></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./image/petitude-icon.png" alt="" /></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./image/funeral-icon.png" alt="" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./image/forum-icon.png" alt="" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="./image/member-icon.png" alt="" /></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 電腦版 nav 這裡結束 -->
+
+    <!-- 手機版 nav 這裡開始 -->
+    <nav class="navbar navbar-expand-lg navbar-light d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none p-0 bg-image">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="#"><img src="./image/petitude-mobile-icon.png" alt=""></a>
+            <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">購物商城</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">寵物保險</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">生命禮儀</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">貓狗論壇</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">會員中心</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 手機版 nav 這裡結束 -->
   <!-- navbar end -->
 
   <!-- section 1 介紹 start -->
-  <div class="container-fluid d-flex justify-content-center bg-image">
+  <div class="container-fluid d-flex justify-content-center bg-image pt-5">
     <div class="row align-items-center" style="margin: 0; padding: 0 60px;">
       <div class="col-lg-5 d-flex justify-content-center" style="padding: 0 6.25rem;" >
           <img class="w-80 h-80"  loading="lazy" src="/image/dog-with-cat-v3.png" alt=""/>
@@ -336,13 +406,14 @@
         <div class="modal-title" id="ModalCatLabel">
           <!-- 保留空位 -->
         </div>
-        <div class="d-flex align-items-start justify-content-end"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="d-flex align-items-start justify-content-end">
+          <button type="button" class="btn-close  border-0 no-outline" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         
       </div>
 
       
-      <div class="modal-body bg-image">
+      <div class="modal-body bg-image" style="padding-top: 0;">
         <div class="d-flex justify-content-center">
           <img src="/image/cat-on-btn.png" alt="">
         </div>
@@ -470,7 +541,7 @@
 
 
       <div class="modal-footer bg-image d-flex justify-content-center">
-        <button type="button" class="own-btn1">開始試算</button>
+        <a href="./pi-calculate.html"><button type="button" class="own-btn1">開始試算</button></a>    
       </div>
     </div>
   </div>
@@ -485,7 +556,8 @@
         <div class="modal-title" id="ModalDogLabel">
           <!-- 保留空位 -->
         </div>
-        <div class="d-flex align-items-start justify-content-end"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="d-flex align-items-start justify-content-end">
+          <button type="button" class="btn-close  border-0 no-outline" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         
       </div>
@@ -619,7 +691,7 @@
 
 
       <div class="modal-footer bg-image d-flex justify-content-center">
-        <button type="button" class="own-btn1">開始試算</button>
+        <a href="./pi-calculate.html"><button type="button" class="own-btn1">開始試算</button></a>        
       </div>
     </div>
   </div>
